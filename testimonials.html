@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Testimonials - John Doe, Technologist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1173d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-white dark:bg-background-dark text-slate-800 dark:text-slate-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between">
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-3" href="#">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/0000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-slate-900 dark:text-white text-lg font-bold">John Doe</span>
+</a>
+</div>
+<nav class="hidden md:flex flex-1 items-center justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal transition-colors hover:text-primary" href="home.html">Home</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal transition-colors hover:text-primary" href="about_me.html">About</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal transition-colors hover:text-primary" href="work_profile.html">Work</a>
+<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="testimonials.html">Testimonials</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal transition-colors hover:text-primary" href="contact.html">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] transition-opacity hover:opacity-90">
+<span class="truncate">Get In Touch</span>
+</button>
+</nav>
+<div class="md:hidden">
+<button class="text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+<div class="flex flex-wrap justify-between gap-3 text-center mb-12">
+<div class="flex w-full flex-col items-center gap-3">
+<p class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] sm:text-5xl">Testimonials &amp; Endorsements</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal max-w-2xl">Kind words from colleagues and partners I've had the pleasure of working with over my 20+ years in technology.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col items-center sm:flex-row text-center sm:text-left gap-6 p-6 sm:p-8 bg-slate-50 dark:bg-slate-900/40 rounded-xl border border-slate-200/80 dark:border-slate-800/50">
+<div class="flex-shrink-0">
+<div class="w-24 h-24 mx-auto bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Professional headshot of Jane Smith" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB0rtTf9HUXWtYaVUc0reUMVsxHqE1kcJNTSFPdRu3KWb56RpR7eoU5N_c83zTgyocE7LQA-U9jVjEbnPzfXekbDYK-KdE7gxykA6MMa9AV5YnAe-lK1gjIxz6LyfO4Vf7m-z5jN9zvC3TPq37fHWPTdbmyWaT43UGLVeNVznnYRMy1clXpeAyUjy1s853bSOytpZIZSxP24cQITffi_S88iQusO24dWNp1QoGW9YA3VuR624KdViI3XHcOBiHTe_FeJGfSO8NCmJrN");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<p class="text-slate-700 dark:text-slate-200 text-base font-normal leading-relaxed italic">
+                                "John is a visionary leader whose technical acumen is matched only by his ability to inspire and mentor his team. He was instrumental in architecting our new cloud infrastructure, delivering the project ahead of schedule and under budget."
+                            </p>
+<div>
+<p class="text-slate-900 dark:text-white text-sm font-bold leading-normal">Jane Smith</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">CTO at InnovateCorp</p>
+</div>
+<a class="text-primary text-sm font-medium leading-normal hover:underline mx-auto sm:mx-0" href="#">View on LinkedIn</a>
+</div>
+</div>
+<div class="flex flex-col items-center sm:flex-row text-center sm:text-left gap-6 p-6 sm:p-8 bg-slate-50 dark:bg-slate-900/40 rounded-xl border border-slate-200/80 dark:border-slate-800/50">
+<div class="flex-shrink-0">
+<div class="w-24 h-24 mx-auto bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Professional headshot of Michael Chen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA3MwB_Uz70Du57s27e71chol_gIHsCwNECDEY_DFqAi5KaSKyEJulNpESxx27-OxTLP8Amjt-NmE3rhFj_dS4D_VITAUqwy3ORoMqBRa3XgfUCihZHJ4aNEmD29wnX1SHXOUu9Tzli_qVGezNOu-l1bTZDy58RJgYSiKgUZXpVb0dtqnO6hsrTZ_CTwZxT3YFEZ-e5WE1Qh_zHFlVRxjc2-cMkiG_VBc-VfsO7-7pF0AgrEEuUbev5cVy2-JfzRxOSyyNCpdjX9v0i");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<p class="text-slate-700 dark:text-slate-200 text-base font-normal leading-relaxed italic">
+                                "Working with John was a masterclass in efficiency and problem-solving. His deep understanding of complex systems and his calm, methodical approach turned a daunting project into a seamless success."
+                            </p>
+<div>
+<p class="text-slate-900 dark:text-white text-sm font-bold leading-normal">Michael Chen</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Lead Software Engineer at TechSolutions</p>
+</div>
+<a class="text-primary text-sm font-medium leading-normal hover:underline mx-auto sm:mx-0" href="#">View on LinkedIn</a>
+</div>
+</div>
+<div class="flex flex-col items-center sm:flex-row text-center sm:text-left gap-6 p-6 sm:p-8 bg-slate-50 dark:bg-slate-900/40 rounded-xl border border-slate-200/80 dark:border-slate-800/50">
+<div class="flex-shrink-0">
+<div class="w-24 h-24 mx-auto bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Professional headshot of Dr. Emily Carter" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFvH2Qgc6bFvyVgFxJZBfasPsQkJv7G7CAuU0Uemy2D_0Lp6kU1moOnYAs05-QkApwYUPHvKFrLoIVoAC52q6Ok3G9CeI8V-vFp3XkHfb708JctH67PfE6E6KdYTYDbFlHOqX8JQScdg_S7bWvQdqKFeKM0to42qVOniJpMqu6Tzqx35FhM4E8OwBG_7D8LdX2e4ILBqe_7RHa61-AO0VACYAyKuMxAKwSEGHbpSwvQaRrJX8brGzFB3IciAYre2gkVe02pjLxibz5");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<p class="text-slate-700 dark:text-slate-200 text-base font-normal leading-relaxed italic">
+                                "I was consistently impressed by John's strategic thinking and his forward-looking perspective on technology trends. He doesn't just solve today's problems; he builds solutions that are resilient and ready for the future."
+                            </p>
+<div>
+<p class="text-slate-900 dark:text-white text-sm font-bold leading-normal">Dr. Emily Carter</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Head of R&amp;D at Future Dynamics</p>
+</div>
+<a class="text-primary text-sm font-medium leading-normal hover:underline mx-auto sm:mx-0" href="#">View on LinkedIn</a>
+</div>
+</div>
+<div class="flex flex-col items-center sm:flex-row text-center sm:text-left gap-6 p-6 sm:p-8 bg-slate-50 dark:bg-slate-900/40 rounded-xl border border-slate-200/80 dark:border-slate-800/50">
+<div class="flex-shrink-0">
+<div class="w-24 h-24 mx-auto bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Professional headshot of David Lee" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARljnJ0l8ppaWM3r75S-DOvmYmeSmEL7LZk1uQ7NhS-eDbPIcXWAB0jHcVuPTaLgYF4QMpgtg0Q3OSm9F_DSnuxnUe6nZgxhiQ0IYEFUK4Y2ZmGgFPfKMPAX5gkkkNQSC26GepEatpGFQ1JXkXdDyc-Yh0gAWjetJ46MJVcT4PHWPw_kMb-WdvMugrKIiq-US69AIhd8BES7j53VQlXJcWiStDG0ix14L2mp2B_nRUQV-41Evi-1HO5SpRU1BprsdJfyJt4htwmY7T");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<p class="text-slate-700 dark:text-slate-200 text-base font-normal leading-relaxed italic">
+                                "As a client, I couldn't have asked for a better partner. John took the time to truly understand our business needs and translated them into a technical solution that has had a significant positive impact on our bottom line."
+                            </p>
+<div>
+<p class="text-slate-900 dark:text-white text-sm font-bold leading-normal">David Lee</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">CEO of Enterprise Growth Inc.</p>
+</div>
+<a class="text-primary text-sm font-medium leading-normal hover:underline mx-auto sm:mx-0" href="#">View on LinkedIn</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+<div class="flex flex-col items-center gap-8">
+<nav class="flex flex-wrap justify-center gap-x-6 gap-y-3">
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Work</a>
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Testimonials</a>
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex justify-center gap-6">
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.212 5.656a8.384 8.384 0 01-2.402.658A4.195 4.195 0 0021.605 4.04a8.423 8.423 0 01-2.656 1.015c-.94-.998-2.28-1.62-3.76-1.62-2.834 0-5.132 2.298-5.132 5.132 0 .401.045.792.133 1.17A14.563 14.563 0 013.18 4.312a5.12 5.12 0 001.587 6.84c-.741-.024-1.438-.228-2.048-.565v.065c0 2.402 1.708 4.406 3.974 4.86a5.15 5.15 0 01-2.32.088c.63 1.97 2.457 3.402 4.623 3.442a8.38 8.38 0 01-5.187 1.789c-.336 0-.668-.02-1-.057a11.833 11.833 0 006.41 1.88c7.693 0 11.9-6.377 11.9-11.9 0-.18-.004-.36-.012-.538a8.504 8.504 0 002.088-2.165l.002-.003z"></path></svg>
+</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.013c0 4.418 2.865 8.166 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.577.688.482A10.001 10.001 0 0022 12.013C22 6.477 17.523 2 12 2z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.02C2 16.99 5.81 21.12 10.62 21.81V14.61H7.83002V12.02H10.62V9.92998C10.62 7.15998 12.39 5.61998 14.93 5.61998C16.14 5.61998 17.15 5.71998 17.41 5.75998V7.95998H16.21C14.85 7.95998 14.55 8.68998 14.55 9.61998V12.02H17.29L16.89 14.61H14.55V21.99C19.53 21.43 23 17.2 23 12.02C23 6.52998 18.5 2.03998 12 2.03998Z"></path></svg>
+</a>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">© 2024 John Doe. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
