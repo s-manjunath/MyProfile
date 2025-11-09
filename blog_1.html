@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Manjunath Sindagi - Blog Post</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#005A9C",
+                        "background-light": "#F8F9FA",
+                        "background-dark": "#101922",
+                        "text-light": "#212529",
+                        "text-dark": "#F8F9FA",
+                        "text-muted-light": "#6C757D",
+                        "text-muted-dark": "#9dabb9",
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#18232f",
+                        "border-light": "#dee2e6",
+                        "border-dark": "#283039"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    typography: (theme) => ({
+                        DEFAULT: {
+                            css: {
+                                color: theme('colors.text-light'),
+                                a: {
+                                    color: theme('colors.primary'),
+                                    '&:hover': {
+                                        color: theme('colors.primary'),
+                                        textDecoration: 'underline',
+                                    },
+                                },
+                                h1: {
+                                    color: theme('colors.text-light'),
+                                },
+                                h2: {
+                                    color: theme('colors.text-light'),
+                                },
+                                h3: {
+                                    color: theme('colors.text-light'),
+                                },
+                                'ol > li::marker': {
+                                    color: theme('colors.text-muted-light'),
+                                },
+                                'ul > li::marker': {
+                                    backgroundColor: theme('colors.text-muted-light'),
+                                },
+                                strong: {
+                                    color: theme('colors.text-light'),
+                                },
+                                blockquote: {
+                                    color: theme('colors.text-muted-light'),
+                                    borderLeftColor: theme('colors.border-light'),
+                                },
+                            },
+                        },
+                        dark: {
+                             css: {
+                                color: theme('colors.text-dark'),
+                                a: {
+                                    color: theme('colors.primary'),
+                                    '&:hover': {
+                                        color: theme('colors.primary'),
+                                    },
+                                },
+                                h1: {
+                                    color: theme('colors.text-dark'),
+                                },
+                                h2: {
+                                    color: theme('colors.text-dark'),
+                                },
+                                h3: {
+                                    color: theme('colors.text-dark'),
+                                },
+                                'ol > li::marker': {
+                                    color: theme('colors.text-muted-dark'),
+                                },
+                                'ul > li::marker': {
+                                    backgroundColor: theme('colors.text-muted-dark'),
+                                },
+                                strong: {
+                                    color: theme('colors.text-dark'),
+                                },
+                                blockquote: {
+                                    color: theme('colors.text-muted-dark'),
+                                    borderLeftColor: theme('colors.border-dark'),
+                                },
+                            },
+                        },
+                    }),
+                },
+            },
+            plugins: [
+                require('@tailwindcss/typography'),
+            ],
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-50 w-full border-b border-border-light bg-white/95 backdrop-blur-sm dark:border-border-dark dark:bg-background-dark/95">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between">
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-3" href="index.html">
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+<span class="text-xl font-bold">JD</span>
+</div>
+<span class="hidden text-lg font-bold sm:inline">Manjunath Sindagi</span>
+</a>
+</div>
+<nav class="hidden items-center gap-6 md:flex">
+<a class="text-sm font-medium text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary" href="index.html">Home</a>
+<a class="text-sm font-medium text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary" href="about_me.html">About</a>
+<a class="text-sm font-medium text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary" href="work_profile.html">Projects</a>
+<a class="text-sm font-medium text-primary dark:text-primary" href="blog.html">Blog</a>
+<a class="text-sm font-medium text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 bg-white dark:bg-background-dark">
+<div class="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
+<article>
+<header class="text-center">
+<p class="text-sm font-medium text-primary">Software Architecture</p>
+<h1 class="mt-2 text-4xl font-black tracking-tight text-text-light dark:text-text-dark sm:text-5xl">Scaling Microservices in a Distributed Environment</h1>
+<div class="mt-6 flex items-center justify-center gap-4">
+<div class="flex items-center gap-3">
+<img alt="Manjunath Sindagi" class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEYOfPRSnro-di80SQBplOB2qu8XELaXE8BXu7nS3n924kmFK8MzAQOZVHJCwpr0jYn0yPoOwASPLSnKpprU29etp_Q5JcckGhj2VnifMIMuwBNHPgRaGPlYi29QOws4RiVIkgmk8idNZvAz9gPgivm5D8-S4FBznhTBoSvXXWwIdfLgFUZd5kVac_PGTtcwfUh7EE8pe-vDQswGfvX-TAKxuh4nG6K1A2YSyOtZBY_TSqae63ApA2hztCbHMmQnjdgaM5946LanyR"/>
+<p class="text-sm font-medium text-text-light dark:text-text-dark">Manjunath Sindagi</p>
+</div>
+<span class="text-text-muted-light dark:text-text-muted-dark">•</span>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">MAR 15, 2025</p>
+</div>
+</header>
+<figure class="my-12">
+<img alt="Feature image for Scaling Microservices article" class="aspect-video w-full rounded-xl object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPlllcN3NxVhdjpQ-hICpxZP0BwoK14PZL5viLOtC4sVLMfEA5qzd8MAOLgdbD57UWYlDbgL6wUinzpaIwzFbM3KvExV-KZRkuoXbxTDyfzsrnWn-CRr7z_t7bH3Yvnr8b9QMQS2gSytzzsobsBQrtKjoG6Xsu4Cw7zZ4nr6W9jPXtso3b7_Ufepj278H8SfKCNSMnF2BnxDg2ve_-Q-lkflODA2pAVeXPaT0v4A69TL4O-oA5fK8zsJH9CO2pyjAMt0tB8z7pdVpr"/>
+<figcaption class="mt-3 text-center text-sm text-text-muted-light dark:text-text-muted-dark">A conceptual image representing interconnected microservices in a network.</figcaption>
+</figure>
+<div class="prose prose-lg dark:prose-dark max-w-none">
+<p>Discover the challenges and strategies for effectively scaling microservices. We'll dive into patterns like service discovery, circuit breakers, and distributed tracing to build resilient, high-performance systems. This post will serve as a deep dive into the practical aspects of managing a complex, distributed architecture.</p>
+<p>As applications grow, monolithic architectures often become bottlenecks. Microservices offer a solution by breaking down large applications into smaller, independent services. However, this architectural style introduces its own set of challenges, particularly around scalability, resilience, and observability.</p>
+<h2>Key Strategies for Scaling</h2>
+<p>To successfully scale a microservices architecture, several key strategies must be employed. These are not just technical implementations but also shifts in mindset and team structure.</p>
+<ol>
+<li><strong>Service Discovery:</strong> In a dynamic environment where services are constantly being deployed and scaled, a robust service discovery mechanism is crucial. Tools like Consul or Eureka help services find and communicate with each other without hardcoded endpoints.</li>
+<li><strong>Circuit Breakers:</strong> To prevent a single failing service from cascading failures throughout the system, the circuit breaker pattern is essential. Libraries like Hystrix or Resilience4j can isolate failing services, allowing the rest of the system to function.</li>
+<li><strong>Distributed Tracing:</strong> Understanding the flow of requests across multiple services is vital for debugging and performance monitoring. Distributed tracing tools like Jaeger or Zipkin provide visibility into the entire request lifecycle.</li>
+</ol>
+<blockquote>
+                        "The goal of microservices is to create a system that is not only scalable but also resilient and maintainable. Each service should be a black box to its consumers."
+                    </blockquote>
+<p>Ultimately, scaling microservices is a journey that requires careful planning, the right tools, and a culture of continuous improvement. By focusing on these core patterns, teams can build systems that are prepared for growth and resilient to failure, ensuring a high-quality experience for users.</p>
+</div>
+</article>
+<div class="mt-12 border-t border-border-light pt-8 dark:border-border-dark">
+<div class="flex items-center justify-between">
+<p class="text-sm font-semibold text-text-light dark:text-text-dark">Share this post</p>
+<div class="flex items-center gap-2">
+<a aria-label="Share on Twitter" class="flex h-8 w-8 items-center justify-center rounded-full bg-background-light text-text-muted-light transition-colors hover:bg-gray-200 dark:bg-card-dark dark:text-text-muted-dark dark:hover:bg-gray-700" href="#">
+<svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+<a aria-label="Share on LinkedIn" class="flex h-8 w-8 items-center justify-center rounded-full bg-background-light text-text-muted-light transition-colors hover:bg-gray-200 dark:bg-card-dark dark:text-text-muted-dark dark:hover:bg-gray-700" href="#">
+<svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a aria-label="Copy link" class="flex h-8 w-8 items-center justify-center rounded-full bg-background-light text-text-muted-light transition-colors hover:bg-gray-200 dark:bg-card-dark dark:text-text-muted-dark dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-base">link</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-16 border-t border-border-light pt-12 dark:border-border-dark">
+<h2 class="text-2xl font-bold tracking-tight text-text-light dark:text-text-dark">Related Posts</h2>
+<div class="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<a class="group" href="#">
+<div class="overflow-hidden rounded-lg">
+<img alt="Cloud Infrastructure" class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6ir2aV7FR82q0eJBxv6ya9vgHQZys0ZIytIrpDjg25esP4QH7dD_SUzhILfa9Ddms9RNOvLxRXL2wQBOgB7INSRpjqdRnv8WupIlk9ietsApSmqiGY3brhrtrYvBjJXV4PBirR9n4RAt1uSGYx0_KpkWjiOauKmPcfwzvE8R3r5vBuPanh1ZdCb0OlCPLGrdUua0A_Ixhw-78gszf_W5SfuN6yGoY-i0HZEYfnJN8u-BTK6AWX5oH38evdWa2y-vhpmKtAatqmkRI"/>
+</div>
+<div class="mt-4">
+<h3 class="font-semibold text-text-light transition-colors group-hover:text-primary dark:text-text-dark dark:group-hover:text-primary">The Future of Cloud-Native Infrastructure</h3>
+<p class="mt-2 text-sm text-text-muted-light dark:text-text-muted-dark">An exploration of serverless and container orchestration.</p>
+</div>
+</a>
+<a class="group" href="#">
+<div class="overflow-hidden rounded-lg">
+<img alt="AI in Development" class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXDli8Ihj36YhP7Zv9SU9tH-pj4MoByp93U7sjbebvyFwPgGw0tm7cQQkCLxYzBYZU9eSTiCvvKF0J3o5CYh01NpmfsuhqkyRrQVtajeeusNo6gjXH6v2cCHeMeL2EQQkxdKm-FW51w7AWEqnkJmuYnp7Ykb0GDPvuc2H4_2R3OM-BNm_4vq5lV-hDfpkAUWwbf0vGQeYD8a1gSTOsGKBfbv-H-o2LWQQpDH1Yu124zoXdUHhel0BQHwgulnna23TCGPp__-aMwuUN"/>
+</div>
+<div class="mt-4">
+<h3 class="font-semibold text-text-light transition-colors group-hover:text-primary dark:text-text-dark dark:group-hover:text-primary">Integrating AI into Your Development Workflow</h3>
+<p class="mt-2 text-sm text-text-muted-light dark:text-text-muted-dark">How AI tools can boost productivity and code quality.</p>
+</div>
+</a>
+<a class="group hidden lg:block" href="#">
+<div class="overflow-hidden rounded-lg">
+<img alt="DevOps" class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0vWVfFeWdW7TrhldTkbAJScFkooWmniRZjEmGu-uYGJk0Rx4jtzOfBq6wO4Mm0XLd6NwvsJY1_LCqPcHCkLlAeGRu_Qb8vvvkJuxI7Ts9gmgxUiK_XIQTLjE1E7UUqGN-Pfgs_o4euGCQt5k_BQsICb48qB7p8YBJePRwVzBPeLNY9TacB-C8Wm5G3KUEDQqvwrqt3FMy9e4Qz5JEHe4S1SaLgHqcOaQRBL7q1kVSGpfTxxNqynrtrzpTB8z8cbO-79yq6Xe27007"/>
+</div>
+<div class="mt-4">
+<h3 class="font-semibold text-text-light transition-colors group-hover:text-primary dark:text-text-dark dark:group-hover:text-primary">DevOps Culture: More Than Just Tools</h3>
+<p class="mt-2 text-sm text-text-muted-light dark:text-text-muted-dark">Building a culture of collaboration and continuous delivery.</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-card-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="py-16 sm:py-20 lg:py-24">
+<div class="rounded-xl bg-primary p-8 text-center text-white dark:bg-primary/90 md:p-12">
+<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Let's Connect</h2>
+<p class="mx-auto mt-4 max-w-2xl text-lg text-primary-100 dark:text-gray-300">Have a project in mind or just want to chat about technology? I'd love to hear from you.</p>
+<a class="mt-8 inline-flex items-center justify-center rounded-lg bg-white px-6 py-3 text-base font-bold text-primary shadow-lg transition-transform hover:scale-105" href="#">
+                        Contact Me
+                    </a>
+</div>
+</div>
+<div class="border-t border-border-light dark:border-border-dark py-12">
+<div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+<div class="col-span-2 md:col-span-1">
+<a class="flex items-center gap-3" href="#">
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+<span class="text-xl font-bold">JD</span>
+</div>
+<span class="text-lg font-bold">Manjunath Sindagi</span>
+</a>
+<p class="mt-4 text-sm text-text-muted-light dark:text-text-muted-dark">Technologist &amp; Leader</p>
+</div>
+<div>
+<h3 class="font-semibold tracking-wider">Navigation</h3>
+<div class="mt-4 flex flex-col gap-3">
+<a class="text-sm text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary" href="#">About</a>
+<a class="text-sm text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary" href="#">Projects</a>
+<a class="text-sm text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary" href="#">Blog</a>
+<a class="text-sm text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary" href="#">Contact</a>
+</div>
+</div>
+<div>
+<h3 class="font-semibold tracking-wider">Legal</h3>
+<div class="mt-4 flex flex-col gap-3">
+<a class="text-sm text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary" href="#">Privacy Policy</a>
+<a class="text-sm text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary" href="#">Terms of Service</a>
+</div>
+</div>
+<div>
+<h3 class="font-semibold tracking-wider">Connect</h3>
+<div class="mt-4 flex flex-col gap-3">
+<a class="text-sm text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary" href="#">Twitter / X</a>
+<a class="text-sm text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary" href="#">LinkedIn</a>
+<a class="text-sm text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary" href="#">GitHub</a>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col-reverse items-center justify-between gap-4 border-t border-border-light py-6 dark:border-border-dark sm:flex-row">
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">© 2025 Manjunath Sindagi. All rights reserved.</p>
+<div class="flex items-center gap-4 text-text-muted-light dark:text-text-muted-dark">
+<a class="transition-colors hover:text-primary" href="#">
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+<path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+</svg>
+</a>
+<a class="transition-colors hover:text-primary" href="#">
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.019c0 4.438 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.019C22 6.477 17.523 2 12 2z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
